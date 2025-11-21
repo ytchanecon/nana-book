@@ -1,0 +1,66 @@
+1. The Problem: "Double Building" & Wrong Folder Structure
+There were two main issues colliding:
+
+Jekyll Interference: GitHub Pages uses a tool called Jekyll by default to build websites. Jekyll ignores any folders that start with an underscore (like _static or _images), which are critical for your book's styling. It also tries to process Markdown files itself. Because it didn't understand the special "admonition" syntax used by your book software (Sphinx), it just displayed the raw text.
+Messy Branch History: Your gh-pages branch likely contained a copy of your entire project (including source files and the _build folder), rather than just the final HTML. This meant GitHub was trying to serve the source code instead of the result.
+2. The Solution: The "Clean Slate" Approach
+I performed a "Force Push" to completely overwrite the history of your website branch. Here is the step-by-step of what I did in the terminal:
+
+cd .../_build/html: I went directly into the folder where your finished HTML files live.
+rm -r .git: I deleted the hidden Git history folder inside that build directory. This made the folder "forget" it was part of a larger project, effectively treating it as a brand new, separate website.
+git init & git checkout -b gh-pages: I started a fresh Git repository right there and named the branch gh-pages.
+git add .: I staged all the files. Because I was inside _build/html, the 
+index.html
+ and 
+intro.html
+ became the root files, not buried inside a subfolder.
+git push -f origin gh-pages: The -f (force) flag is the key. It told GitHub: "Ignore everything you currently have on this branch. Delete it all and replace it exactly with these files."
+Summary
+We stopped GitHub from trying to "build" your book and instead just forced it to host the static HTML files you had already successfully built on your computer.
+
+
+%%%%%%%%%%%%%%%
+
+To update your book, you need to follow a specific workflow: Edit Source -> Build -> Deploy.
+
+Since we fixed the deployment by manually handling the build folder, I highly recommend we make a small change to your source files to make future updates easier (specifically, renaming the Chinese filename that caused issues).
+
+Step 1: Rename the Source File (One-time fix)
+I recommend renaming 第一讲.md to chapter1.md. This prevents the "broken link" issue from happening again when you rebuild.
+
+Rename: 第一讲.md -> chapter1.md
+Update Table of Contents: Open _toc.yml and change file: 第一讲 to file: chapter1.
+Step 2: How to Add/Edit Content
+To Edit: Just open chapter1.md (or intro.md) in your editor, make changes, and save.
+To Add a New Chapter:
+Create a new file, e.g., chapter2.md.
+Add your content.
+Open _toc.yml and add it to the list:
+yaml
+- file: chapter2
+Step 3: How to Publish Your Changes
+Since the automatic GitHub tools were failing, you should run these commands in your terminal to update the site. I can create a simple script for you to do this automatically if you like.
+
+The Commands:
+
+powershell
+# 1. Build the book (generates the HTML)
+jupyter-book build .
+
+# 2. Go to the build folder
+cd _build/html
+
+# 3. Add the special file to fix styling (if missing)
+echo > .nojekyll
+
+# 4. Upload to GitHub
+git add .
+git commit -m "Update book content"
+git push origin gh-pages
+
+# 5. Go back to main folder
+cd ../..
+Would you like me to:
+
+Rename 第一讲.md to chapter1.md and update _toc.yml for you?
+Create a deploy.bat script so you can just double-click it to update your website?

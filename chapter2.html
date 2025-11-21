@@ -1,0 +1,763 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>第二讲：奶奶，咱们的养鸡场赚钱了吗？ &#8212; 微观经济学II讲义</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=40338fc4" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapter2';</script>
+    <script src="_static/lecture-colors.js?v=6997224b"></script>
+    <script src="_static/fix-math-spacing.js?v=210f9972"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="第一讲：奶奶，我们聊聊怎么开个养鸡场" href="chapter1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">微观经济学II讲义</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">微观经济学II讲义 (Microeconomics II Lectures)</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="chapter1.html">第一讲：奶奶，我们聊聊怎么开个养鸡场</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">第二讲：奶奶，咱们的养鸡场赚钱了吗？</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/chapter2.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>第二讲：奶奶，咱们的养鸡场赚钱了吗？</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> 目录 </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. “赚钱”是个啥意思？——利润的定义</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">举个例子：咱们养鸡场的成本和利润</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2. 看不见的”成本”——机会成本</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">3. 有些东西不能说变就变——不变和可变要素</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vs">4. 短期亏钱 vs. 长期打算</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">5. 短期里，怎样才能赚最多？</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">6. 要是情况变了怎么办？——比较静态分析</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">7. 长期的宏图大志——长期利润最大化</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">8. 我们为什么需要饲料和工人？——要素需求</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cobb-douglas">9. 给爱钻研的你：Cobb-Douglas 生产函数的算术题</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">10. 今天的故事就到这里</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="id1">
+<h1>第二讲：奶奶，咱们的养鸡场赚钱了吗？<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<div class="note admonition">
+<p class="admonition-title">💰 本讲核心主题：利润分析</p>
+<p>本讲将教您如何计算利润，理解经济利润与会计利润的区别，以及如何在竞争市场中实现利润最大化。</p>
+</div>
+<p>奶奶，上回咱们聊了怎么开一家养鸡场，把鸡苗、饲料和咱们的辛苦，变成一只只肥硕的土鸡。今天，咱们就来算算账，看看咱们这个养鸡场到底赚没赚钱，以及怎么才能赚得更多。</p>
+<div class="note admonition">
+<p class="admonition-title">📈 核心概念</p>
+<p>本讲将重点讨论利润的真正含义、机会成本的概念，以及如何在短期和长期实现利润最大化。理解这些概念将帮助我们做出更明智的商业决策。</p>
+</div>
+<section id="id2">
+<h2>1. “赚钱”是个啥意思？——利润的定义<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>您看，咱们的养鸡场开在一个养殖专业村里。村里不止咱们一家养鸡，还有好几家呢。所以，咱们的鸡卖多少钱一只，不能由着性子来。得看看周围的养鸡场卖多少，市场上的客人们愿意出多少钱。这种情况，经济学家就说，我们是<strong>价格的接受者 (Price Takers)</strong>，在一个**竞争性市场 (Competitive Market)**里做生意。</p>
+<p>那怎么才算赚钱呢？最简单的想法就是，把卖鸡收到的所有钱，减去为了养这些鸡花掉的所有钱，剩下的就是赚的。经济学家把它写成一个简单的公式：</p>
+<div class="math notranslate nohighlight">
+\[\text{利润} = \text{总收益} - \text{总成本}\]</div>
+<p>听起来很简单，对吧？但”成本”这两个字，里面的学问可大着呢！</p>
+<p>经济学家还喜欢用更精确的符号来表达。假设咱们卖的鸡价格是 <span class="math notranslate nohighlight">\(p\)</span>，卖了 <span class="math notranslate nohighlight">\(y\)</span> 只；咱们用的鸡苗、饲料、付的工人工资等等，价格分别是 <span class="math notranslate nohighlight">\(w_1, w_2, \ldots\)</span>，用的数量分别是 <span class="math notranslate nohighlight">\(x_1, x_2, \ldots\)</span>。那么，咱们的利润 <span class="math notranslate nohighlight">\(\pi\)</span> 就是：</p>
+<div class="math notranslate nohighlight">
+\[\pi = p \cdot y - (w_1 x_1 + w_2 x_2 + \cdots)\]</div>
+<p>左边的 <span class="math notranslate nohighlight">\(p \cdot y\)</span> 就是<strong>总收益 (Total Revenue)</strong>，右边括号里那一长串，就是<strong>总成本 (Total Cost)</strong>。比如，一只鸡卖20元，咱们一天卖了100只，那总收益就是2000元。然后减去今天买鸡苗、买饲料、付小时工工资花掉的钱，剩下的才是利润。</p>
+<div class="definition admonition">
+<p class="admonition-title">Definition: 利润函数</p>
+<p><strong>利润 (Profit)</strong> 是总收益与总成本的差额：</p>
+<div class="math notranslate nohighlight">
+\[\pi = TR - TC = p \cdot y - \sum_{i=1}^{n} w_i x_i\]</div>
+<p>其中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\pi\)</span>：利润</p></li>
+<li><p><span class="math notranslate nohighlight">\(TR = p \cdot y\)</span>：总收益（价格 × 产量）</p></li>
+<li><p><span class="math notranslate nohighlight">\(TC = \sum w_i x_i\)</span>：总成本（各项投入的成本之和）</p></li>
+<li><p><span class="math notranslate nohighlight">\(p\)</span>：产品价格</p></li>
+<li><p><span class="math notranslate nohighlight">\(y\)</span>：产出数量</p></li>
+<li><p><span class="math notranslate nohighlight">\(w_i\)</span>：第 <span class="math notranslate nohighlight">\(i\)</span> 种投入要素的价格</p></li>
+<li><p><span class="math notranslate nohighlight">\(x_i\)</span>：第 <span class="math notranslate nohighlight">\(i\)</span> 种投入要素的投入量</p></li>
+</ul>
+</div>
+</section>
+<section id="id3">
+<h2>举个例子：咱们养鸡场的成本和利润<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<p>奶奶，为了让您更清楚地理解这些概念，咱们来算一算具体数字吧！假设咱们今天养了100只鸡，来看看成本和收益是怎么算的。</p>
+<p>首先，咱们的<strong>总收益</strong>：市场上一只鸡卖20元，咱们卖了100只，那就是：</p>
+<div class="math notranslate nohighlight">
+\[\text{总收益} = 20 \times 100 = 2000 \text{元}\]</div>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/f21.png"><img alt="_images/f21.png" src="_images/f21.png" style="width: 70%;" />
+</a>
+</figure>
+<p>现在来看<strong>总成本</strong>。咱们的成本包括几个部分：人工、饲料、土地，还有其他费用。咱们把它列成一个表：</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/f22.png"><img alt="_images/f22.png" src="_images/f22.png" style="width: 70%;" />
+</a>
+</figure>
+<p>从表里可以看到，咱们为了养这100只鸡，总共花了840元。</p>
+<p>那么利润就是：</p>
+<div class="math notranslate nohighlight">
+\[\text{利润} = \text{总收益} - \text{总成本} = 2000 - 840 = 1160 \text{元}\]</div>
+<p>哇！看来咱们的养鸡场今天赚了1160块钱！但是奶奶，您要记住，这个是<strong>利润</strong>。</p>
+<p>这个例子告诉我们：利润 = 收益 - 成本，但成本的计算需要很仔细，包括所有能想到的花销。</p>
+<div class="definition admonition">
+<p class="admonition-title">Definition: 竞争性市场</p>
+<p><strong>竞争性市场 (Competitive Market)</strong> 具有以下特征：</p>
+<ol class="arabic simple">
+<li><p><strong>大量买者和卖者</strong>：单个企业的决策对市场价格影响很小</p></li>
+<li><p><strong>产品同质</strong>：所有企业生产的产品基本相同</p></li>
+<li><p><strong>价格接受者</strong>：企业只能接受市场价格，无法独自定价</p></li>
+<li><p><strong>自由进入和退出</strong>：企业可以自由进入或退出市场</p></li>
+<li><p><strong>完全信息</strong>：所有参与者都了解市场价格和产品信息</p></li>
+</ol>
+<p>在竞争性市场中，企业面临的需求曲线是水平的（完全弹性）。</p>
+</div>
+</section>
+<section id="id4">
+<h2>2. 看不见的”成本”——机会成本<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<p>奶奶，现在我要跟您聊一个最重要的概念，叫<strong>机会成本 (Opportunity Cost)</strong>。它说的是，咱们做一件事，就意味着放弃了做其他事的机会。在那些放弃了的机会里，那个<strong>价值最高</strong>的，就是咱们做这件事的”机会成本”。</p>
+<p>比如说，咱们俩把所有时间都扑在这家养鸡场上了。可您想啊，如果您不养鸡，是不是就可以去公园跳广场舞，或者去邻居家搓麻将，享受清闲日子？我呢，要是不在这儿帮您，是不是可以去一家大公司上班，每个月领一份不错的薪水？这些咱们为了养鸡而”放弃”了的快乐和收入，就是咱们开养鸡场的机会成本。</p>
+<p>再比如咱们家那个空着的场地，咱们自己用来养鸡了。但如果我们不自己养，把它租给隔壁种果树的老李，他每年愿意给咱们10万块钱租金。那咱们自己用这个场地养鸡的机会成本，就是那白白放弃的10万块租金啊！所以，机会成本就是”为了得到A，而放弃的最好的B”。</p>
+<div class="definition admonition">
+<p class="admonition-title">Definition: 机会成本</p>
+<p><strong>机会成本 (Opportunity Cost)</strong> 是指为了得到某种东西而放弃的其他选择中价值最高的那个。</p>
+<p><strong>数学表达：</strong></p>
+<div class="math notranslate nohighlight">
+\[\text{机会成本} = \max\{\text{所有被放弃选择的收益}\}\]</div>
+<p><strong>关键特征：</strong></p>
+<ul class="simple">
+<li><p>机会成本是隐性的，不体现在会计账本上</p></li>
+<li><p>它是决策的”真实成本”</p></li>
+<li><p>包括所有放弃的收益（货币和非货币的）</p></li>
+</ul>
+<p><strong>例子：</strong></p>
+<ul class="simple">
+<li><p>时间的机会成本：养鸡的时间 vs. 打工的工资</p></li>
+<li><p>资源的机会成本：自家场地 vs. 出租的租金</p></li>
+<li><p>资金的机会成本：投入养鸡的钱 vs. 银行存款的利息</p></li>
+</ul>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">💡 机会成本的智慧</p>
+<p>机会成本提醒我们：决策时不仅要看”得到什么”，更要看”放弃了什么”。这个思维方式适用于生活中的各种选择，从投资理财到职业规划，都能帮我们做出更理性的决定。</p>
+</div>
+</section>
+<section id="id5">
+<h2>3. 有些东西不能说变就变——不变和可变要素<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<p>奶奶，您记得咱们之前聊过，养鸡得有场地、有自动化设备。这些东西，不是说想换就能马上换的。场地的租约一签就是好几年，设备买回来也得用上好几年。这种在一段时间内数量没法轻易改变的“家当”，就叫<strong>不变要素 (Fixed Factors of Production)</strong>。</p>
+<p>但有些东西就很灵活了。比如咱们每天要买多少斤饲料，要请几个小时工来帮忙。行情好就多买点、多请几个；行情差就少买点、少请几个。这种可以根据需要随时调整数量的东西，就叫<strong>可变要素 (Variable Factors of Production)</strong>。</p>
+<p>这就引出了两个重要的时间概念：<strong>短期 (Short-run)</strong> 和 <strong>长期 (Long-run)</strong>。</p>
+<ul class="simple">
+<li><p><strong>短期</strong>，指的就是至少有一种要素（比如场地）是“不变”的时期。在这段时间里，我们只能通过调整可变要素（比如人手和饲料）来改变产量。</p></li>
+<li><p><strong>长期</strong>，指的是一个足够长的时间，长到我们所有的“家当”都可以改变了。比如租约到期了，我们可以决定要不要换个更大的店；旧冰箱用坏了，我们可以决定买个新的还是买俩。在长期，所有要素都是可变的。</p></li>
+</ul>
+</section>
+<section id="vs">
+<h2>4. 短期亏钱 vs. 长期打算<a class="headerlink" href="#vs" title="Link to this heading">#</a></h2>
+<p>明白了短期和长期，咱们就能理解为什么有时候亏本的生意还得硬着头皮做下去。</p>
+<p>在<strong>短期</strong>，因为场地租金这种<strong>固定成本 (Fixed Costs)<strong>是每个月必须交的，不管你养不养鸡。所以，就算行情不好，只要每天卖鸡的收入，除了付掉饲料和小时工这些</strong>可变成本 (Variable Costs)<strong>之外，还能剩下一块钱，那也比关门强。因为这一块钱可以帮我们分担一点点租金。如果彻底关门，那整个租金就得白白亏掉。所以，在短期，企业</strong>完全可能亏钱经营</strong>（也就是经济利润为负）。</p>
+<p>但在<strong>长期</strong>，情况就不一样了。如果咱们的养鸡场连续几年算下来经济利润都是负的，那等租约一到期，咱们肯定就关门大吉了，把资源（咱们的时间、金钱、场地）用到别处去。所以，在长期，一个理性的生意人，能接受的<strong>最差结果就是经济利润为零</strong>，也就是不赚不亏。没人会傻到一直做亏本买-卖。</p>
+</section>
+<section id="id6">
+<h2>5. 短期里，怎样才能赚最多？<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<p>好，现在咱们聚焦<strong>短期</strong>。场地大小和设备数量都定下来了，我们唯一能决定的，就是每天请多少小时工（可变要素 <span class="math notranslate nohighlight">\(x_1\)</span>）。我们的目标，就是找到一个最佳的用工数量 <span class="math notranslate nohighlight">\(x_1^*\)</span>，让今天的利润最大。</p>
+<p>咱们的利润公式可以写成：</p>
+<div class="math notranslate nohighlight">
+\[\pi(x_1) = p \cdot f(x_1, \bar{x}_2) - w_1 x_1 - w_2 \bar{x}_2\]</div>
+<p>这里的 <span class="math notranslate nohighlight">\(p \cdot f(x_1, \bar{x}_2)\)</span> 是总收入（价格乘以产量），<span class="math notranslate nohighlight">\(w_1 x_1\)</span> 是付给小时工的总工资， <span class="math notranslate nohighlight">\(w_2 \bar{x}_2\)</span> 是咱们雷打不动的场地租金等固定成本。</p>
+<p>怎么找到最优的 <span class="math notranslate nohighlight">\(x_1^*\)</span> 呢？经济学家发现了一个特别简单的黄金法则。他们对上面的公式求导，然后发现，当利润最大的时候，一定满足下面这个条件：</p>
+<div class="math notranslate nohighlight">
+\[p \cdot MP_1(x_1^*, \bar{x}_2) = w_1\]</div>
+<p>这个公式看着吓人，其实意思特别简单！</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(MP_1\)</span> 是<strong>边际产量</strong>，就是多请一个小时工，能多养出多少只鸡。</p></li>
+<li><p><span class="math notranslate nohighlight">\(p \cdot MP_1\)</span> 就是<strong>边际产品价值 (Value of Marginal Product)</strong>，意思是多请一个小时工，他额外养出的那些鸡能多卖多少钱。</p></li>
+<li><p><span class="math notranslate nohighlight">\(w_1\)</span> 就是请这个小时工一小时要付的工资。</p></li>
+</ul>
+<p>所以，这个黄金法则是说：<strong>你应该一直增加小时工，直到你付给最后一个小时工的工资，正好等于他为你创造的额外收入。</strong></p>
+<p>比如，一只鸡20元，小时工工资30元/小时。我们发现，多请一个小时工，他能额外多养2只鸡（<span class="math notranslate nohighlight">\(MP_1=2\)</span>）。那么他创造的边际产品价值就是 <span class="math notranslate nohighlight">\(20 \times 2 = 40\)</span> 元。因为40元比30元工资高，所以请他来是划算的，能增加总利润！我们就会继续请人。但是您知道，鸡舍人一多就乱，效率会下降（边际产品递减）。当我们请到某个人时，他一小时只能额外多养1.5只鸡，那他创造的价值就是 <span class="math notranslate nohighlight">\(20 \times 1.5 = 30\)</span> 元，正好等于他的工资。好了，就到此为止，再多请人就不划算了。这时候，咱们的利润就最大了。</p>
+<div class="theorem admonition">
+<p class="admonition-title">Theorem: 短期利润最大化条件</p>
+<p>在短期中，企业选择可变投入要素 <span class="math notranslate nohighlight">\(x_1\)</span> 使利润最大化：</p>
+<div class="math notranslate nohighlight">
+\[\max_{x_1} \quad \pi(x_1) = p \cdot f(x_1, \bar{x}_2) - w_1 x_1 - w_2 \bar{x}_2\]</div>
+<p><strong>一阶条件（利润最大化）：</strong></p>
+<div class="math notranslate nohighlight">
+\[p \cdot MP_1(x_1^*, \bar{x}_2) = w_1\]</div>
+<p>即：<strong>边际产品价值 = 投入要素价格</strong></p>
+<p><strong>二阶条件（确保是最大值）：</strong></p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial^2 \pi}{\partial x_1^2} = p \cdot \frac{\partial MP_1}{\partial x_1} &lt; 0\]</div>
+<p>由于边际产品递减，二阶条件通常满足。</p>
+<p><strong>经济含义：</strong></p>
+<ul class="simple">
+<li><p>当 <span class="math notranslate nohighlight">\(p \cdot MP_1 &gt; w_1\)</span>：增加投入会增加利润</p></li>
+<li><p>当 <span class="math notranslate nohighlight">\(p \cdot MP_1 &lt; w_1\)</span>：减少投入会增加利润</p></li>
+<li><p>当 <span class="math notranslate nohighlight">\(p \cdot MP_1 = w_1\)</span>：利润达到最大</p></li>
+</ul>
+</div>
+<p>奶奶，您觉得刚才的数学公式是不是有点抽象？其实，我们可以用一个简单的图表来表达这个最优的选择情况。假设咱们的养鸡场，主要变量是饲养员的数量。想象一下，我们画一个图：横轴（x轴）是饲养员的数量，纵轴（y轴）是鸡的产量。这个曲线就是咱们的生产函数，显示了不同数量的饲养员能养出多少鸡。</p>
+<p>然后，我们再画一条直线，它的斜率是 <span class="math notranslate nohighlight">\(w_1 / p\)</span>（饲养员的工资除以鸡的价格）。这条线代表成本和收入的平衡。要找到最优的饲养员数量，就让这条直线变成切线，<strong>正好切于生产函数曲线上</strong>。切点的位置，就是那个黄金法则满足的点——边际产品价值正好等于工资的最优饲养员数量 <span class="math notranslate nohighlight">\(x_1^*\)</span>。</p>
+<p>这样的图能让我们一眼看出，为什么要在这个点停手：再多雇人，曲线变平了，额外产出的价值就不够支付工资了。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/f23.png"><img alt="_images/f23.png" src="_images/f23.png" style="width: 70%;" />
+</a>
+</figure>
+<p>在下面这个图中，我们可以看到实利润 <span class="math notranslate nohighlight">\(\pi/p\)</span> 的情况。</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/f24.png"><img alt="_images/f24.png" src="_images/f24.png" style="width: 70%;" />
+</a>
+</figure>
+</section>
+<section id="id7">
+<h2>6. 要是情况变了怎么办？——比较静态分析<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<p>这个世界总是在变。要是小时工的工资，或者鸡的价格变了，咱们该怎么办呢？</p>
+<ul class="simple">
+<li><p><strong>如果小时工的工资 <span class="math notranslate nohighlight">\(w\_1\)</span> 涨了</strong>：那咱们的成本就高了。按照黄金法则 <span class="math notranslate nohighlight">\(p \cdot MP\_1 = w\_1\)</span>，现在 <span class="math notranslate nohighlight">\(w\_1\)</span> 变大了，咱们就得想办法让左边的 <span class="math notranslate nohighlight">\(p \cdot MP\_1\)</span> 也变大。因为价格 <span class="math notranslate nohighlight">\(p\)</span> 不变，就只能提高边际产量 <span class="math notranslate nohighlight">\(MP\_1\)</span>。怎么提高呢？少请几个人，鸡舍不那么挤了，留下来的人平均效率就高了。所以，工资一涨，我们就会倾向于<strong>少雇人</strong>。</p></li>
+</ul>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/f25.png"><img alt="_images/f25.png" src="_images/f25.png" style="width: 70%;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p><strong>如果咱们的鸡价格 <span class="math notranslate nohighlight">\(p\)</span> 涨了</strong>：那咱们的收入就高了。现在黄金法则的左边 <span class="math notranslate nohighlight">\(p \cdot MP\_1\)</span> 一下子变大了，大于右边的工资 <span class="math notranslate nohighlight">\(w\_1\)</span>。这意味着多请人变得更划算了！于是，我们就会倾向于<strong>多雇人</strong>，扩大生产，抓住这个赚钱的好机会。</p></li>
+</ul>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/f26.png"><img alt="_images/f26.png" src="_images/f26.png" style="width: 70%;" />
+</a>
+</figure>
+</section>
+<section id="id8">
+<h2>7. 长期的宏图大志——长期利润最大化<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
+<p>现在咱们眼光放长远一点，到了<strong>长期</strong>。这时，场地大小、设备数量，什么都可以变了。我们的目标，是找到一个包含所有要素的最佳组合（比如多大的场地配多少员工再配多少台设备），让利润最大化。</p>
+<div class="math notranslate nohighlight">
+\[
+\max_{x_1, x_2} \pi(x_1, x_2) = p \cdot f(x_1, x_2) - w_1 x_1 - w_2 x_2
+\]</div>
+<p>这里的道理和短期是一样的，只不过现在要对<strong>所有</strong>要素都运用那条黄金法则。也就是说，在最优状态下：</p>
+<ul class="simple">
+<li><p>付给最后一个小时工的工资，要等于他创造的额外收入：<span class="math notranslate nohighlight">\(p \cdot MP_{人工} = w_{人工工资}\)</span></p></li>
+<li><p>花在最后一台设备上的钱（比如租金），也要等于它创造的额外收入：<span class="math notranslate nohighlight">\(p \cdot MP_{设备} = w_{设备租金}\)</span></p></li>
+</ul>
+<p>简单说，就是要把钱花在刀刃上，让花在任何一种投入上的最后一分钱，带来的回报都一样大。</p>
+</section>
+<section id="id9">
+<h2>8. 我们为什么需要饲料和工人？——要素需求<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
+<p>奶奶，您想过没，咱们养鸡场为什么要去买饲料、鸡苗，要去雇人？不是因为咱们自己喜欢饲料，而是因为客人们喜欢吃咱们用这些东西养出来的鸡。</p>
+<p>所以，厂商对生产要素（饲料、工人）的需求，是一种<strong>派生需求 (Derived Demand)</strong>。它不是凭空产生的，而是从消费者对最终产品（鸡）的需求中“派生”出来的。如果大家突然不爱吃鸡了，那我们对工人和饲料的需求也就立刻消失了。</p>
+<p>我们到底需要多少工人、多少饲料，是由鸡的价格、工人的工资、饲料的价格共同决定的。描述这个关系的函数，就叫<strong>要素需求函数 (Factor Demand Functions)</strong>。</p>
+<div class="tip admonition">
+<p class="admonition-title">🎯 本讲总结</p>
+<p>利润分析的核心是理解经济利润的概念和机会成本的思维方式。记住短期与长期的区别，以及竞争市场中利润趋向于零的规律。这些洞见将帮助我们更好地评估商业机会和投资决策。</p>
+</div>
+</section>
+<section id="cobb-douglas">
+<h2>9. 给爱钻研的你：Cobb-Douglas 生产函数的算术题<a class="headerlink" href="#cobb-douglas" title="Link to this heading">#</a></h2>
+<p>奶奶，有些朋友可能觉得光听故事不过瘾，想看看具体的数学是怎么算的。虽然这部分有点“烧脑”，但它能帮我们把刚才讲的道理看得更透彻。咱们就拿经济学里大名鼎鼎的 <strong>Cobb-Douglas 生产函数</strong> 做个例子，看看怎么推导要素的需求和供给。</p>
+<p><strong>例子：Cobb-Douglas 生产函数的要素需求与供给函数推导</strong></p>
+<p>考虑一个具有 Cobb-Douglas 生产函数的厂商：<span class="math notranslate nohighlight">\(y = A x_1^{\alpha} x_2^{1-\alpha}\)</span>，其中 <span class="math notranslate nohighlight">\(0 &lt; \alpha &lt; 1\)</span>，<span class="math notranslate nohighlight">\(A &gt; 0\)</span> 为技术参数。厂商面临产品价格 <span class="math notranslate nohighlight">\(p\)</span> 和要素价格 <span class="math notranslate nohighlight">\(w_1, w_2\)</span>。我们推导其要素需求和供给函数。</p>
+<p><strong>1. 短期利润最大化 (Short-run Profit Maximization)</strong></p>
+<ul>
+<li><p>在短期内，厂商只能调整可变要素 <span class="math notranslate nohighlight">\(x_1\)</span>，而固定要素 <span class="math notranslate nohighlight">\(x_2\)</span> 保持不变（记为 <span class="math notranslate nohighlight">\(\bar{x}_2\)</span>）。</p></li>
+<li><p><strong>问题</strong>：</p>
+<div class="math notranslate nohighlight">
+\[ \max_{x_1} \quad \pi = p \cdot f(x_1, \bar{x}_2) - w_1 x_1 - w_2 \bar{x}_2 \]</div>
+</li>
+<li><p><strong>最优条件</strong>：</p>
+<div class="math notranslate nohighlight">
+\[ p \cdot MP_1(x_1^*, \bar{x}_2) = w_1 \]</div>
+<p>其中 <span class="math notranslate nohighlight">\(MP_1 = \frac{\partial f}{\partial x_1}\)</span>。</p>
+</li>
+<li><p>对于 Cobb-Douglas 生产函数 <span class="math notranslate nohighlight">\(y = A x_1^{\alpha} \bar{x}_2^{1-\alpha}\)</span>，边际产品 <span class="math notranslate nohighlight">\(MP_1 = \alpha A x_1^{\alpha-1} \bar{x}_2^{1-\alpha}\)</span>。</p></li>
+<li><p><strong>一阶条件</strong>：</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+  \begin{aligned}
+      p \cdot \alpha A x_1^{\alpha-1} \bar{x}_2^{1-\alpha} &amp;= w_1 \\
+      x_1^* &amp;= \left( \frac{\alpha A p}{w_1} \right)^{\frac{1}{1-\alpha}} \bar{x}_2
+  \end{aligned}
+  \end{split}\]</div>
+</li>
+<li><p>由此得到短期要素需求函数 <span class="math notranslate nohighlight">\(x_1^*(p, w_1, \bar{x}_2, A)\)</span> 和供给函数 <span class="math notranslate nohighlight">\(y^* = f(x_1^*, \bar{x}_2)\)</span>。</p></li>
+<li><p><strong>比较静态分析</strong>：考察要素需求 <span class="math notranslate nohighlight">\(x_1^*\)</span> 对要素价格 <span class="math notranslate nohighlight">\(w_1\)</span> 和产品价格 <span class="math notranslate nohighlight">\(p\)</span> 的变化。</p></li>
+<li><p>对 <span class="math notranslate nohighlight">\(w_1\)</span> 的变化：</p>
+<div class="math notranslate nohighlight">
+\[
+  \frac{\partial x_1^*}{\partial w_1} = -\frac{1}{1-\alpha} \cdot \frac{1}{w_1} \cdot x_1^* &lt; 0
+  \]</div>
+<p>因此，<span class="math notranslate nohighlight">\(w_1\)</span> 上升时，<span class="math notranslate nohighlight">\(x_1^*\)</span> 减少。</p>
+</li>
+<li><p>对 <span class="math notranslate nohighlight">\(p\)</span> 的变化：</p>
+<div class="math notranslate nohighlight">
+\[
+  \frac{\partial x_1^*}{\partial p} = \frac{1}{1-\alpha} \cdot \frac{1}{p} \cdot x_1^* &gt; 0
+  \]</div>
+<p>因此，<span class="math notranslate nohighlight">\(p\)</span> 上升时，<span class="math notranslate nohighlight">\(x_1^*\)</span> 增加。</p>
+</li>
+</ul>
+<p><strong>2. 长期利润最大化 (Long-run Profit Maximization)</strong></p>
+<ul>
+<li><p><strong>问题</strong>：</p>
+<div class="math notranslate nohighlight">
+\[ \max_{x_1, x_2} \quad \pi = p A x_1^{\alpha} x_2^{1-\alpha} - w_1 x_1 - w_2 x_2 \]</div>
+</li>
+<li><p><strong>一阶条件</strong>：</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+  \begin{aligned}
+      \frac{\partial \pi}{\partial x_1} &amp;= p A \alpha x_1^{\alpha-1} x_2^{1-\alpha} - w_1 = 0 \quad \Rightarrow \quad p \cdot MP_1 = w_1 \\
+      \frac{\partial \pi}{\partial x_2} &amp;= p A (1-\alpha) x_1^{\alpha} x_2^{-\alpha} - w_2 = 0 \quad \Rightarrow \quad p \cdot MP_2 = w_2
+  \end{aligned}
+  \end{split}\]</div>
+</li>
+<li><p><strong>边际产品</strong>：<span class="math notranslate nohighlight">\(MP_1 = \alpha A x_1^{\alpha-1} x_2^{1-\alpha}\)</span>, <span class="math notranslate nohighlight">\(MP_2 = (1-\alpha) A x_1^{\alpha} x_2^{-\alpha}\)</span>。</p></li>
+<li><p>代入一阶条件，得到：</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+  \begin{aligned}
+      w_1 &amp;= p \alpha \frac{y}{x_1} \\
+      w_2 &amp;= p (1-\alpha) \frac{y}{x_2}
+  \end{aligned}
+  \end{split}\]</div>
+</li>
+<li><p>从一阶条件可以得到要素需求：</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+  \begin{aligned}
+      x_1 &amp;= \alpha \frac{y}{w_1/p} \\
+      x_2 &amp;= (1-\alpha) \frac{y}{w_2/p}
+  \end{aligned}
+  \end{split}\]</div>
+</li>
+</ul>
+</section>
+<section id="id10">
+<h2>10. 今天的故事就到这里<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
+<p>好啦，奶奶，今天咱们把养鸡场的账算得明明白白了。我们知道了什么是真正的<strong>经济利润</strong>，学会了怎么在短期和长期做出让利润最大的决定，也明白了为什么在一个充分竞争的地方，想一直赚大钱是那么不容易的一件事。这些道理，不仅能帮我们开好养鸡场，也能帮我们看懂身边好多生意场上的事儿呢！</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="chapter1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">第一讲：奶奶，我们聊聊怎么开个养鸡场</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> 目录
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1. “赚钱”是个啥意思？——利润的定义</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">举个例子：咱们养鸡场的成本和利润</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2. 看不见的”成本”——机会成本</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">3. 有些东西不能说变就变——不变和可变要素</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vs">4. 短期亏钱 vs. 长期打算</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">5. 短期里，怎样才能赚最多？</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">6. 要是情况变了怎么办？——比较静态分析</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">7. 长期的宏图大志——长期利润最大化</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">8. 我们为什么需要饲料和工人？——要素需求</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cobb-douglas">9. 给爱钻研的你：Cobb-Douglas 生产函数的算术题</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">10. 今天的故事就到这里</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 奶奶的养鸡场经济学
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

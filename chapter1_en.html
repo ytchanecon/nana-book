@@ -1,0 +1,686 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Lecture 1: Grandma, Let’s Talk About Starting a Chicken Farm &#8212; 微观经济学II讲义</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=40338fc4" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapter1_en';</script>
+    <script src="_static/lecture-colors.js?v=6997224b"></script>
+    <script src="_static/fix-math-spacing.js?v=210f9972"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">微观经济学II讲义</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">微观经济学II讲义 (Microeconomics II Lectures)</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="chapter1.html">第一讲：奶奶，我们聊聊怎么开个养鸡场</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter2.html">第二讲：奶奶，咱们的养鸡场赚钱了吗？</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/chapter1_en.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Lecture 1: Grandma, Let’s Talk About Starting a Chicken Farm</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> 目录 </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-do-we-need-to-raise-chickens-inputs-and-outputs">1. What Do We Need to Raise Chickens? — Inputs and Outputs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-many-chickens-can-we-raise-technological-constraints-and-production-sets">2. How Many Chickens Can We Raise? — Technological Constraints and Production Sets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-draw-our-chicken-raising-knack-isoquants">3. How to Draw Our “Chicken Raising Knack”? — Isoquants</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#case-1-perfect-partners-that-must-be-matched-in-proportion">Case 1: “Perfect Partners” That Must Be Matched in Proportion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#case-2-flexible-combinations-that-can-replace-each-other">Case 2: “Flexible Combinations” That Can Replace Each Other</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#case-3-twins-that-work-the-same-and-can-be-swapped-freely">Case 3: “Twins” That Work the Same and Can Be Swapped Freely</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#from-line-to-surface-production-function-and-production-set">4. From “Line” to “Surface” — Production Function and Production Set</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#two-tempers-of-technology-more-is-better-but-improvement-slows-down">5. Two “Tempers” of Technology: More is Better, But Improvement Slows Down</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-swap-people-and-feed-technical-rate-of-substitution">6. How to Swap People and Feed? — Technical Rate of Substitution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#after-the-chicken-farm-grows-big-returns-to-scale">7. After the Chicken Farm Grows Big — Returns to Scale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thats-all-for-todays-story">8. That’s All for Today’s Story</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="lecture-1-grandma-lets-talk-about-starting-a-chicken-farm">
+<h1>Lecture 1: Grandma, Let’s Talk About Starting a Chicken Farm<a class="headerlink" href="#lecture-1-grandma-lets-talk-about-starting-a-chicken-farm" title="Link to this heading">#</a></h1>
+<div class="tip admonition">
+<p class="admonition-title">📚 Core Theme: Production Theory</p>
+<p>This lecture will introduce you to the concept of production in economics. Through the vivid example of Grandma’s chicken farm, we will understand core concepts such as inputs, outputs, isoquants, and production functions.</p>
+</div>
+<p>Grandma, do you remember when we used to feed chickens in the yard when I was little? Back then, the sun was warm on the ground, and the chicks were chirping and running around us. Actually, the “production” that economists study is just like us raising chickens—it’s a process of turning a pile of things into another pile of more useful things. Today, let’s talk about how economists would think about it if we wanted to open a real chicken farm.</p>
+<div class="note admonition">
+<p class="admonition-title">📋 Learning Path</p>
+<p>In this lecture, we will follow a strict logical order: from inputs and outputs to technological constraints, then understanding different technologies through three typical “isoquants”, introducing production functions and marginal products, and finally discussing returns to scale.</p>
+</div>
+<section id="what-do-we-need-to-raise-chickens-inputs-and-outputs">
+<h2>1. What Do We Need to Raise Chickens? — Inputs and Outputs<a class="headerlink" href="#what-do-we-need-to-raise-chickens-inputs-and-outputs" title="Link to this heading">#</a></h2>
+<p>You see, to raise chickens, we need to have things on hand. The lively chickens we get in the end are our <strong>Output</strong>. To get these chickens, we need to put in some things.</p>
+<p>For example, the feed the chickens eat is called <strong>Raw Materials</strong> in economics. The place needed to raise chickens, the farm, is <strong>Land</strong>. The time the farmer spends taking care of the chickens is <strong>Labor</strong>.</p>
+<p>Finally, there is <strong>Capital</strong>. This is divided into two types. The money we borrow from the bank to rent the farm and buy equipment is called <strong>Financial Capital</strong>. And the chicken coops, feeding troughs, and waterers we buy, which are tools that can be used repeatedly, are <strong>Physical Capital</strong>.</p>
+<p>When we get all these <strong>Inputs</strong> together, we can start raising chickens and finally get <strong>Output</strong>.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/f1.png"><img alt="_images/f1.png" src="_images/f1.png" style="width: 70%;" />
+</a>
+</figure>
+</section>
+<section id="how-many-chickens-can-we-raise-technological-constraints-and-production-sets">
+<h2>2. How Many Chickens Can We Raise? — Technological Constraints and Production Sets<a class="headerlink" href="#how-many-chickens-can-we-raise-technological-constraints-and-production-sets" title="Link to this heading">#</a></h2>
+<p>Alright, Grandma, now everything is ready. We have farmers, a farm, and feed. So exactly how many chickens can we raise?</p>
+<p>Actually, this largely depends on how superb our technology is. You see, big companies like KFC and McDonald’s raise chickens fast and in large quantities, but we might be slower raising them at home. This “how superb the technology is” is what economists call <strong>Technological Constraints</strong>. It is defined as “all possible combinations of inputs that can be used to produce a given output”.</p>
+<p>Because the word “technology” sounds abstract, economists measure it this way: see who can get more output with the same inputs. If we use the same inputs as last year but raise more chickens this year, it means our technology has improved.</p>
+<div class="example admonition">
+<p class="admonition-title">Example: Different Input Combinations</p>
+<p><strong>Different input combinations yield different outputs:</strong></p>
+<ul class="simple">
+<li><p><strong>Combination 1</strong>: 1 Farmer + 50 sqm Farm + 10 kg Feed = Can raise 1000 chickens</p></li>
+<li><p><strong>Combination 2</strong>: 2 Farmers + 50 sqm Farm + 10 kg Feed = Can raise 1100 chickens</p></li>
+<li><p><strong>Combination 3</strong>: 1 Farmer + 50 sqm Farm + 15 kg Feed = Can raise 1050 chickens</p></li>
+</ul>
+</div>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/f2.png"><img alt="_images/f2.png" src="_images/f2.png" style="width: 70%;" />
+</a>
+</figure>
+<p>All these possible “input-output” combinations together form a big book, which economists call the <strong>Production Set</strong>.</p>
+</section>
+<section id="how-to-draw-our-chicken-raising-knack-isoquants">
+<h2>3. How to Draw Our “Chicken Raising Knack”? — Isoquants<a class="headerlink" href="#how-to-draw-our-chicken-raising-knack-isoquants" title="Link to this heading">#</a></h2>
+<p>So, can we draw this “technological constraint” to make it look more intuitive? Of course! Let’s fix a target, say, producing 1000 chickens. Then we look at how different inputs need to be matched to achieve this goal. This line describing “all combinations of different inputs to produce the same output” is called an <strong>Isoquant</strong>.</p>
+<p>Let’s look at three most typical situations:</p>
+<section id="case-1-perfect-partners-that-must-be-matched-in-proportion">
+<h3>Case 1: “Perfect Partners” That Must Be Matched in Proportion<a class="headerlink" href="#case-1-perfect-partners-that-must-be-matched-in-proportion" title="Link to this heading">#</a></h3>
+<p>Suppose to raise 1000 chickens, we must have <strong>1 Breeder</strong> paired with <strong>1 Bag of Special Feed</strong>.</p>
+<ul class="simple">
+<li><p>If we have 2 breeders but still only 1 bag of feed, the extra person is useless, and we can still only raise 1000 chickens.</p></li>
+<li><p>Conversely, if we have 1 breeder and 2 bags of feed, he is short-handed and can’t finish feeding the extra feed, so we can still only raise 1000 chickens.</p></li>
+<li><p>Only when we have 2 breeders and 2 bags of feed can the output double to 2000 chickens.</p></li>
+</ul>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/f3.png"><img alt="_images/f3.png" src="_images/f3.png" style="width: 70%;" />
+</a>
+</figure>
+<p>Inputs that must be matched in a fixed proportion are called <strong>Perfect Complements</strong>, and their isoquant is <strong>L-shaped</strong>.</p>
+<div class="definition admonition">
+<p class="admonition-title">Definition: Perfect Complements Production Function</p>
+<p><strong>Perfect Complements Production Function (Leontief Production Function)</strong></p>
+<ul class="simple">
+<li><p><strong>Mathematical Form</strong>: <span class="math notranslate nohighlight">\(y = \min(ax_1, bx_2)\)</span></p></li>
+<li><p><strong>Example</strong>: <span class="math notranslate nohighlight">\(y = \min(x_1, x_2)\)</span>, indicating that output y depends on the smaller of inputs x1 and x2.</p></li>
+<li><p><strong>Isoquant</strong>: L-shaped.</p></li>
+</ul>
+</div>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/f4.png"><img alt="_images/f4.png" src="_images/f4.png" style="width: 70%;" />
+</a>
+</figure>
+<div class="question admonition">
+<p class="admonition-title">Practice</p>
+<p><strong>Practice:</strong>
+Please try to draw the isoquant for the function <span class="math notranslate nohighlight">\(y = \min(2x_1, x_2)\)</span>.</p>
+</div>
+</section>
+<section id="case-2-flexible-combinations-that-can-replace-each-other">
+<h3>Case 2: “Flexible Combinations” That Can Replace Each Other<a class="headerlink" href="#case-2-flexible-combinations-that-can-replace-each-other" title="Link to this heading">#</a></h3>
+<p>Now let’s switch to two inputs: <strong>Farmers</strong> and <strong>Farm Space</strong>. Suppose our goal is still to produce 1000 chickens.</p>
+<ul class="simple">
+<li><p>We can use <strong>1 Farmer</strong> with <strong>50 sqm</strong> of space, letting him farm intensively.</p></li>
+<li><p>Or use <strong>2 Farmers</strong> with <strong>30 sqm</strong> of space, letting them manage intensively in a smaller place.</p></li>
+<li><p>Or even <strong>3 Farmers</strong> with <strong>25 sqm</strong> of space…</p></li>
+</ul>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/f5.png"><img alt="_images/f5.png" src="_images/f5.png" style="width: 70%;" />
+</a>
+</figure>
+<p>You see, farmers and space can substitute for each other. Fewer people mean more land is needed; more people mean land can be smaller. The isoquant drawn from this relationship is a beautiful curve bending towards the origin. This is the most common situation.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/f6.png"><img alt="_images/f6.png" src="_images/f6.png" style="width: 70%;" />
+</a>
+</figure>
+<div class="theorem admonition">
+<p class="admonition-title">Theorem: Cobb-Douglas Production Function</p>
+<p><strong>Cobb-Douglas Production Function</strong></p>
+<ul class="simple">
+<li><p><strong>Mathematical Form</strong>: <span class="math notranslate nohighlight">\(y = A \cdot x_1^a \cdot x_2^b\)</span> (where A, a, b are all constants greater than 0)</p></li>
+<li><p><strong>Characteristics</strong>: Inputs can substitute for each other, but not perfectly 1:1.</p></li>
+<li><p><strong>Isoquant</strong>: A curve convex to the origin.</p></li>
+</ul>
+</div>
+<div class="question admonition">
+<p class="admonition-title">Practice</p>
+<p><strong>Practice:</strong>
+Please try to draw the isoquant for the function <span class="math notranslate nohighlight">\(y = \sqrt{x_1 \cdot x_2}\)</span>.</p>
+</div>
+</section>
+<section id="case-3-twins-that-work-the-same-and-can-be-swapped-freely">
+<h3>Case 3: “Twins” That Work the Same and Can Be Swapped Freely<a class="headerlink" href="#case-3-twins-that-work-the-same-and-can-be-swapped-freely" title="Link to this heading">#</a></h3>
+<p>The last case. Suppose someone comes to sell a “Golden Feed”.</p>
+<ul class="simple">
+<li><p>Using <strong>2 bags of Ordinary Feed</strong> can raise 1000 chickens.</p></li>
+<li><p>Using <strong>1 bag of Golden Feed</strong> can also raise 1000 chickens.</p></li>
+<li><p>Then, using <strong>1 bag of Ordinary Feed</strong> plus <strong>half a bag of Golden Feed</strong> has the same effect, still 1000 chickens.</p></li>
+</ul>
+<p>The effects of these two feeds can be perfectly substituted in a fixed proportion; they are <strong>Perfect Substitutes</strong>. The isoquant drawn is a <strong>straight line</strong>.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/f7.png"><img alt="_images/f7.png" src="_images/f7.png" style="width: 70%;" />
+</a>
+</figure>
+<div class="definition admonition">
+<p class="admonition-title">Definition: Linear Production Function</p>
+<p><strong>Linear Production Function</strong></p>
+<ul class="simple">
+<li><p><strong>Mathematical Form</strong>: <span class="math notranslate nohighlight">\(y = ax_1 + bx_2\)</span></p></li>
+<li><p><strong>Characteristics</strong>: Inputs x1 and x2 can be perfectly substituted at a fixed ratio a/b.</p></li>
+<li><p><strong>Isoquant</strong>: Straight line.</p></li>
+</ul>
+</div>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/f8.png"><img alt="_images/f8.png" src="_images/f8.png" style="width: 70%;" />
+</a>
+</figure>
+<div class="question admonition">
+<p class="admonition-title">Practice</p>
+<p><strong>Practice:</strong>
+Please try to draw the isoquant for the function <span class="math notranslate nohighlight">\(y = 2x_1 + x_2\)</span>.</p>
+</div>
+<p>Grandma, look, by drawing these three types of graphs, we can see the technological relationship between different inputs with our own eyes. The <strong>Isoquant</strong> is the first core concept we learned today.</p>
+</section>
+</section>
+<section id="from-line-to-surface-production-function-and-production-set">
+<h2>4. From “Line” to “Surface” — Production Function and Production Set<a class="headerlink" href="#from-line-to-surface-production-function-and-production-set" title="Link to this heading">#</a></h2>
+<p>Just now we were looking at inputs with fixed output. Now let’s reverse it and look at only one input, such as the <strong>number of breeders</strong>, and see its relationship with the <strong>total output of chickens</strong>.</p>
+<ul class="simple">
+<li><p>1 Breeder can raise <strong>1000</strong> chickens.</p></li>
+<li><p>2 Breeders can raise <strong>1700</strong> chickens.</p></li>
+<li><p>3 Breeders can raise <strong>2200</strong> chickens.</p></li>
+</ul>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/f9.png"><img alt="_images/f9.png" src="_images/f9.png" style="width: 70%;" />
+</a>
+</figure>
+<p>If we draw this relationship as a graph, with the number of breeders on the horizontal axis and the number of chickens on the vertical axis, the resulting line is called the <strong>Production Function</strong>. It plots the <strong>maximum</strong> output we can get given the inputs.</p>
+<p>And this line and all the area below it constitute the <strong>Production Set</strong> we mentioned earlier.</p>
+<p>The <strong>Production Function</strong> is the second core concept we need to remember.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/f10.png"><img alt="_images/f10.png" src="_images/f10.png" style="width: 70%;" />
+</a>
+</figure>
+</section>
+<section id="two-tempers-of-technology-more-is-better-but-improvement-slows-down">
+<h2>5. Two “Tempers” of Technology: More is Better, But Improvement Slows Down<a class="headerlink" href="#two-tempers-of-technology-more-is-better-but-improvement-slows-down" title="Link to this heading">#</a></h2>
+<p>Grandma, look carefully at that production function line just now; it has two very simple “tempers”.</p>
+<p>The first temper is: <strong>The line goes up</strong>. This is easy to understand; as long as they don’t cause trouble, the more farmers, the more chickens raised. This is called <strong>Monotonicity</strong>.</p>
+<p>The second temper is: <strong>The line rises quickly at first, then becomes flatter and flatter</strong>. This means that when there are no farmers on the farm, the first one you hire can raise 1000 chickens, a huge contribution! But if there are already 5 farmers on the farm, the place is only so big. If you hire another one, everyone might get in each other’s way, and the additional output he brings might only be 500 chickens.</p>
+<p>This concept of “how much extra output an additional unit of input can bring” is called <strong>Marginal Product (MP)</strong>.</p>
+<div class="definition admonition">
+<p class="admonition-title">Definition: Marginal Product</p>
+<p><strong>Marginal Product (MP)</strong> refers to the increment in output resulting from increasing one unit of a certain input factor while keeping other input factors constant.</p>
+<ul class="simple">
+<li><p><strong>Mathematical Expression</strong>: <span class="math notranslate nohighlight">\(MP = \frac{df(x)}{dx}\)</span></p></li>
+<li><p><strong>Monotonicity</strong> means: <span class="math notranslate nohighlight">\(MP &gt; 0\)</span></p></li>
+<li><p><strong>Diminishing Marginal Product</strong> means: MP is constantly getting smaller, i.e., <span class="math notranslate nohighlight">\(\frac{d^2f(x)}{dx^2} &lt; 0\)</span></p></li>
+</ul>
+</div>
+<p>This temper of “improvement slowing down” is the famous <strong>Law of Diminishing Marginal Product</strong>.</p>
+</section>
+<section id="how-to-swap-people-and-feed-technical-rate-of-substitution">
+<h2>6. How to Swap People and Feed? — Technical Rate of Substitution<a class="headerlink" href="#how-to-swap-people-and-feed-technical-rate-of-substitution" title="Link to this heading">#</a></h2>
+<p>Okay, let’s put these two “tempers” back onto the <strong>isoquant</strong> of two inputs to see.</p>
+<ul class="simple">
+<li><p><strong>Temper 1 (MP &gt; 0)</strong> determines that the isoquant is <strong>downward sloping</strong>. The reason is simple: since both farmers and feed are useful, if you want to maintain the same output, if you use fewer farmers, you must use more feed to make up for it.</p></li>
+<li><p><strong>Temper 2 (Diminishing Marginal Product)</strong> determines that the isoquant is <strong>convex to the origin</strong>. Think about it, when there are very few farmers and a lot of feed, farmers are a precious “scarce resource”, and their marginal output is high. At this time, to replace one farmer, you have to use a lot of feed to make up for it. Conversely, when there are many farmers and little feed, feed becomes a treasure. If you have one less bag of feed, you have to add several farmers to make up for it.</p></li>
+</ul>
+<p>This “exchange rate” is not fixed. The slope of a point on the isoquant represents the “exchange rate” of the two inputs at that point. Economists have given it a name, called <strong>Technical Rate of Substitution (TRS)</strong>.</p>
+<div class="definition admonition">
+<p class="admonition-title">Definition: Technical Rate of Substitution</p>
+<p><strong>Technical Rate of Substitution (TRS)</strong> represents the rate at which two input factors substitute for each other while keeping the output level constant.</p>
+<div class="math notranslate nohighlight">
+\[TRS_{12} = -\frac{dx_2}{dx_1}\bigg|_{y=\text{constant}} = \frac{MP_1}{MP_2}\]</div>
+<p>Its magnitude is equal to the ratio of the marginal products of the two inputs.</p>
+</div>
+</section>
+<section id="after-the-chicken-farm-grows-big-returns-to-scale">
+<h2>7. After the Chicken Farm Grows Big — Returns to Scale<a class="headerlink" href="#after-the-chicken-farm-grows-big-returns-to-scale" title="Link to this heading">#</a></h2>
+<p>Grandma, what we discussed earlier was either fixed output or fixed one input. But if we want to develop in the long run and expand the business, we might increase both farmers and feed at the same time. At this time, how will the output change? This is the problem that <strong>Returns to Scale</strong> discusses.</p>
+<p>There are three possibilities:</p>
+<ol class="arabic simple">
+<li><p><strong>Constant Returns to Scale (CRS)</strong>: All inputs double, and output also exactly doubles. It’s like we just opened an identical chicken farm next door.</p></li>
+<li><p><strong>Increasing Returns to Scale (IRS)</strong>: All inputs double, and output increases by more than double! This is great. It may be because the scale is large, we can have more refined division of labor, or introduce automated information management systems, greatly improving efficiency.</p></li>
+<li><p><strong>Decreasing Returns to Scale (DRS)</strong>: All inputs double, and output increases by less than double. This usually happens when a company becomes too large, management becomes complex, there are too many people and things get chaotic, suffering from “big company disease”, which drags down efficiency instead.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">💡 How to Judge the Type of Returns to Scale?</p>
+<p><strong>How to Judge the Type of Returns to Scale?</strong></p>
+<p>For the Cobb-Douglas production function <span class="math notranslate nohighlight">\(Q = A L^{\alpha} K^{\beta}\)</span>:</p>
+<ul class="simple">
+<li><p>If <span class="math notranslate nohighlight">\(\alpha + \beta = 1\)</span>: Constant Returns to Scale (CRS)</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(\alpha + \beta &gt; 1\)</span>: Increasing Returns to Scale (IRS)</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(\alpha + \beta &lt; 1\)</span>: Decreasing Returns to Scale (DRS)</p></li>
+</ul>
+</div>
+</section>
+<section id="thats-all-for-todays-story">
+<h2>8. That’s All for Today’s Story<a class="headerlink" href="#thats-all-for-todays-story" title="Link to this heading">#</a></h2>
+<p>Alright, Grandma, today’s story is over. We started with what <strong>Inputs</strong> are needed to raise chickens, talked about how much different “input combinations” can produce, which is <strong>Technological Constraints</strong> and <strong>Production Sets</strong>. We learned to use <strong>Isoquants</strong> to intuitively understand three different production technologies. Then, we started from a single input and understood the principles of <strong>Production Function</strong> and <strong>Diminishing Marginal Product</strong>. Finally, we looked forward to three possible <strong>Returns to Scale</strong> situations after the chicken farm grows bigger.</p>
+<p>These terms sound a bit complicated, but they actually talk about the simplest truths in our lives, right? Economics is sometimes just explaining these truths more clearly. Next time, let’s talk about how much it costs to open a chicken farm and how to set prices to make money!</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> 目录
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-do-we-need-to-raise-chickens-inputs-and-outputs">1. What Do We Need to Raise Chickens? — Inputs and Outputs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-many-chickens-can-we-raise-technological-constraints-and-production-sets">2. How Many Chickens Can We Raise? — Technological Constraints and Production Sets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-draw-our-chicken-raising-knack-isoquants">3. How to Draw Our “Chicken Raising Knack”? — Isoquants</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#case-1-perfect-partners-that-must-be-matched-in-proportion">Case 1: “Perfect Partners” That Must Be Matched in Proportion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#case-2-flexible-combinations-that-can-replace-each-other">Case 2: “Flexible Combinations” That Can Replace Each Other</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#case-3-twins-that-work-the-same-and-can-be-swapped-freely">Case 3: “Twins” That Work the Same and Can Be Swapped Freely</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#from-line-to-surface-production-function-and-production-set">4. From “Line” to “Surface” — Production Function and Production Set</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#two-tempers-of-technology-more-is-better-but-improvement-slows-down">5. Two “Tempers” of Technology: More is Better, But Improvement Slows Down</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-swap-people-and-feed-technical-rate-of-substitution">6. How to Swap People and Feed? — Technical Rate of Substitution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#after-the-chicken-farm-grows-big-returns-to-scale">7. After the Chicken Farm Grows Big — Returns to Scale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thats-all-for-todays-story">8. That’s All for Today’s Story</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 奶奶的养鸡场经济学
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
