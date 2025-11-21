@@ -1,0 +1,82 @@
+# Jupyter Book configuration
+title: 微观经济学II讲义  # Microeconomics II Manuscript
+author: 奶奶的养鸡场经济学  # Grandma's Chicken Farm Economics
+copyright: "2025"
+logo: ""  # Add logo path if available
+
+# Force re-execute notebooks on each build
+execute:
+  execute_notebooks: force
+  timeout: 30
+  allow_errors: false
+
+# Professional HTML configuration
+html:
+  use_issues_button: false
+  use_repository_button: false
+  use_edit_page_button: false
+  extra_navbar: ""
+  home_page_in_navbar: true
+  extra_footer: |
+    <div style="text-align: center; padding: 20px; border-top: 1px solid #ddd; margin-top: 40px;">
+      <p style="margin: 0; color: #666; font-size: 0.9em;">
+        微观经济学II讲义 | 学术资料 | © 2025
+      </p>
+    </div>
+
+# Launch button settings
+launch_buttons:
+  notebook_interface: classic
+  binderhub_url: ""
+  thebe: false
+  colab_url: ""
+
+# Uncomment and configure when you have a repository
+# repository:
+#   url: ""  # Add repository URL if hosted on GitHub/GitLab
+#   path_to_book: ""
+#   branch: main
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+# Advanced and power-user settings
+sphinx:
+  config:
+    html_theme_options:
+      # Professional appearance settings
+      repository_url: ""
+      use_edit_page_button: false
+      use_repository_button: false
+      use_issues_button: false
+      show_navbar_depth: 1
+      show_toc_level: 2
+      toc_title: "目录"
+
+    # Static files directory
+    html_static_path:
+      - _static
+    # Include custom CSS and JavaScript
+    html_css_files:
+      - custom.css
+    html_js_files:
+      - lecture-colors.js
+    # Disable thebe completely
+    thebe_config:
+      enabled: false
+    myst_enable_extensions:
+      - colon_fence
+      - deflist
+      - dollarmath
+      - html_admonition
+      - html_image
+      - linkify
+      - replacements
+      - smartquotes
+      - substitution
+    myst_url_schemes: [mailto, http, https, ftp]
+    nb_custom_formats:
+      .pct.py:
+        - jupytext.read
+        - fmt: py:percent

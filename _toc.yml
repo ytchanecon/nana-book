@@ -1,0 +1,12 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+- caption: 微观经济学II讲义 (Microeconomics II Lectures)
+  chapters:
+  - file: chapter1
+    title: "第一讲：奶奶，我们聊聊怎么开个养鸡场"
+  - file: chapter2
+    title: "第二讲：奶奶，咱们的养鸡场赚钱了吗？"

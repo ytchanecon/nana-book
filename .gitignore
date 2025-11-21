@@ -1,0 +1,23 @@
+# Build outputs (commented out for GitHub Pages)
+_build/
+.jupyter_cache/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# References (optional)
+references.bib

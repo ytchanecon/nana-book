@@ -1,0 +1,869 @@
+/* Professional styling for Microeconomics II Manuscript */
+
+/* Import Google Fonts - Source Han Serif SC for better readability */
+@import url('https://fonts.googleapis.com/css2?family=Source+Han+Serif+SC:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap');
+
+/* Force serif font by overriding theme CSS variables */
+:root {
+    --pst-font-family-base: 'Source Han Serif SC', 'Noto Serif SC', 'SimSun', 'NSimSun', 'STSong', 'STFangsong', 'FangSong', 'KaiTi', 'STKaiti', serif !important;
+    --font-family-base: 'Source Han Serif SC', 'Noto Serif SC', 'SimSun', 'NSimSun', 'STSong', 'STFangsong', 'FangSong', 'KaiTi', 'STKaiti', serif !important;
+}
+
+/* Font loading optimization - removed Source Sans Pro as we use Source Han Serif SC */
+
+/* Enhanced professional typography with serif fonts */
+html body,
+body,
+html {
+    font-family: 'Source Han Serif SC', 'Noto Serif SC', 'SimSun', 'NSimSun', 'STSong', 'STFangsong', 'FangSong', 'KaiTi', 'STKaiti', serif !important;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    word-spacing: 0.3px;
+    color: #1a1a1a;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Professional header styling */
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.4em;
+    color: #2c5aa0 !important;
+}
+
+/* ===== COLORFUL THEMES FOR EACH LECTURE ===== */
+
+/* Add colorful themes using JavaScript to set body classes */
+body.lecture-1 h1,
+body.lecture-1 h2,
+body.lecture-1 section h1,
+body.lecture-1 section h2 {
+    color: #2c5aa0 !important;
+    border-color: #2c5aa0 !important;
+    border-bottom-color: #2c5aa0 !important;
+}
+
+.lecture-1 .admonition {
+    border-left-color: #2c5aa0 !important;
+}
+
+.lecture-1 .admonition-title {
+    color: #2c5aa0 !important;
+}
+
+body.lecture-2 h1,
+body.lecture-2 h2,
+body.lecture-2 section h1,
+body.lecture-2 section h2 {
+    color: #2d8b57 !important;
+    border-color: #2d8b57 !important;
+    border-bottom-color: #2d8b57 !important;
+}
+
+.lecture-2 .admonition {
+    border-left-color: #2d8b57 !important;
+}
+
+.lecture-2 .admonition-title {
+    color: #2d8b57 !important;
+}
+
+body.lecture-3 h1,
+body.lecture-3 h2,
+body.lecture-3 section h1,
+body.lecture-3 section h2 {
+    color: #d97706 !important;
+    border-color: #d97706 !important;
+    border-bottom-color: #d97706 !important;
+}
+
+.lecture-3 .admonition {
+    border-left-color: #d97706 !important;
+}
+
+.lecture-3 .admonition-title {
+    color: #d97706 !important;
+}
+
+body.lecture-4 h1,
+body.lecture-4 h2,
+body.lecture-4 section h1,
+body.lecture-4 section h2 {
+    color: #7c3aed !important;
+    border-color: #7c3aed !important;
+    border-bottom-color: #7c3aed !important;
+}
+
+.lecture-4 .admonition {
+    border-left-color: #7c3aed !important;
+}
+
+.lecture-4 .admonition-title {
+    color: #7c3aed !important;
+}
+
+body.lecture-5 h1,
+body.lecture-5 h2,
+body.lecture-5 section h1,
+body.lecture-5 section h2 {
+    color: #0d9488 !important;
+    border-color: #0d9488 !important;
+    border-bottom-color: #0d9488 !important;
+}
+
+.lecture-5 .admonition {
+    border-left-color: #0d9488 !important;
+}
+
+.lecture-5 .admonition-title {
+    color: #0d9488 !important;
+}
+
+body.lecture-6 h1,
+body.lecture-6 h2,
+body.lecture-6 section h1,
+body.lecture-6 section h2 {
+    color: #dc2626 !important;
+    border-color: #dc2626 !important;
+    border-bottom-color: #dc2626 !important;
+}
+
+.lecture-6 .admonition {
+    border-left-color: #dc2626 !important;
+}
+
+.lecture-6 .admonition-title {
+    color: #dc2626 !important;
+}
+
+body.lecture-7 h1,
+body.lecture-7 h2,
+body.lecture-7 section h1,
+body.lecture-7 section h2 {
+    color: #4338ca !important;
+    border-color: #4338ca !important;
+    border-bottom-color: #4338ca !important;
+}
+
+.lecture-7 .admonition {
+    border-left-color: #4338ca !important;
+}
+
+.lecture-7 .admonition-title {
+    color: #4338ca !important;
+}
+
+body.lecture-8 h1,
+body.lecture-8 h2,
+body.lecture-8 section h1,
+body.lecture-8 section h2 {
+    color: #be185d !important;
+    border-color: #be185d !important;
+    border-bottom-color: #be185d !important;
+}
+
+.lecture-8 .admonition {
+    border-left-color: #be185d !important;
+}
+
+.lecture-8 .admonition-title {
+    color: #be185d !important;
+}
+
+/* ===== END COLORFUL THEMES ===== */
+
+/* Professional paragraph styling */
+p {
+    margin-bottom: 1.5em;
+    margin-top: 0;
+    text-align: justify;
+    hyphens: auto;
+    text-justify: inter-word;
+    text-indent: 0;
+}
+
+/* First paragraph after heading - no indent */
+h1+p,
+h2+p,
+h3+p,
+h4+p {
+    text-indent: 0;
+}
+
+/* Content area improvements */
+.main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 60px;
+    background-color: #ffffff;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Better spacing for sections */
+.section {
+    margin-bottom: 2em;
+}
+
+/* Professional table styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #2c5aa0;
+}
+
+/* Enhanced code blocks */
+.code-cell {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1em 0;
+}
+
+/* Professional headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000000;
+    font-weight: 600;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    font-size: 1.8em;
+    font-weight: 700;
+    border-bottom: 3px solid #1a4480;
+    padding-bottom: 0.5em;
+    margin-bottom: 1.5em;
+    margin-top: 0;
+    color: #0a1929;
+}
+
+h2 {
+    font-size: 1.4em;
+    font-weight: 600;
+    border-bottom: 2px solid #c45500;
+    padding-bottom: 0.4em;
+    margin-top: 2.5em;
+    color: #1a1a1a;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #2a2a2a;
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+}
+
+h4 {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #3a3a3a;
+    margin-top: 1.8em;
+    margin-bottom: 0.8em;
+}
+
+h5 {
+    font-size: 1.05em;
+    font-weight: 500;
+    color: #4a4a4a;
+    margin-top: 1.5em;
+    margin-bottom: 0.6em;
+}
+
+h6 {
+    font-size: 1em;
+    font-weight: 500;
+    color: #5a5a5a;
+    margin-top: 1.2em;
+    margin-bottom: 0.6em;
+}
+
+/* Better blockquote styling */
+blockquote {
+    border-left: 5px solid #2c5aa0;
+    padding: 1.5em 1.5em 1.5em 2em;
+    margin: 2em 0;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    font-style: italic;
+    color: #3a3a3a;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Professional link styling */
+.lecture-1 a {
+    color: #2c5aa0;
+}
+
+.lecture-1 a:hover {
+    color: #4a90e2;
+}
+
+.lecture-2 a {
+    color: #2d8b57;
+}
+
+.lecture-2 a:hover {
+    color: #4ade80;
+}
+
+.lecture-3 a {
+    color: #d97706;
+}
+
+.lecture-3 a:hover {
+    color: #f59e0b;
+}
+
+.lecture-4 a {
+    color: #7c3aed;
+}
+
+.lecture-4 a:hover {
+    color: #a855f7;
+}
+
+.lecture-5 a {
+    color: #0d9488;
+}
+
+.lecture-5 a:hover {
+    color: #14b8a6;
+}
+
+.lecture-6 a {
+    color: #dc2626;
+}
+
+.lecture-6 a:hover {
+    color: #ef4444;
+}
+
+.lecture-7 a {
+    color: #4338ca;
+}
+
+.lecture-7 a:hover {
+    color: #6366f1;
+}
+
+.lecture-8 a {
+    color: #be185d;
+}
+
+.lecture-8 a:hover {
+    color: #ec4899;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Colorful highlights for important terms */
+.lecture-1 .highlight-term {
+    background-color: rgba(44, 90, 160, 0.1);
+    color: #2c5aa0;
+}
+
+.lecture-2 .highlight-term {
+    background-color: rgba(45, 139, 87, 0.1);
+    color: #2d8b57;
+}
+
+.lecture-3 .highlight-term {
+    background-color: rgba(217, 119, 6, 0.1);
+    color: #d97706;
+}
+
+.lecture-4 .highlight-term {
+    background-color: rgba(124, 58, 237, 0.1);
+    color: #7c3aed;
+}
+
+.lecture-5 .highlight-term {
+    background-color: rgba(13, 148, 136, 0.1);
+    color: #0d9488;
+}
+
+.lecture-6 .highlight-term {
+    background-color: rgba(220, 38, 38, 0.1);
+    color: #dc2626;
+}
+
+.lecture-7 .highlight-term {
+    background-color: rgba(67, 56, 202, 0.1);
+    color: #4338ca;
+}
+
+.lecture-8 .highlight-term {
+    background-color: rgba(190, 24, 93, 0.1);
+    color: #be185d;
+}
+
+/* Professional math expressions styling */
+.math {
+    font-family: 'Computer Modern', 'Latin Modern Roman', 'STIX Two Math', 'Cambria Math', serif;
+    font-size: 1.2em;
+    color: #000000;
+    line-height: 1.5;
+}
+
+/* Professional code and inline code styling */
+code {
+    font-family: 'Fira Code', 'Source Code Pro', 'Consolas', 'Monaco', monospace;
+    font-size: 0.9em;
+    background-color: #f1f3f4;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    color: #d73a49;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    color: inherit;
+}
+
+/* Professional button styling */
+.btn-primary {
+    background-color: #2c5aa0;
+    border-color: #2c5aa0;
+}
+
+.btn-primary:hover {
+    background-color: #1e3f73;
+    border-color: #1e3f73;
+}
+
+/* Footer improvements */
+.footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    padding: 2em 0;
+    margin-top: 3em;
+}
+
+/* Professional list styling */
+ul,
+ol {
+    padding-left: 2em;
+    margin: 1.5em 0;
+}
+
+li {
+    margin-bottom: 0.8em;
+    line-height: 1.5;
+    padding-left: 0.5em;
+}
+
+ul li {
+    list-style-type: disc;
+}
+
+ol li {
+    list-style-type: decimal;
+}
+
+/* Professional admonitions */
+.admonition {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: none;
+    margin: 1.5em 0;
+}
+
+.admonition-title {
+    font-weight: 600;
+    color: #2c5aa0;
+}
+
+/* Responsive design improvements */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* ===== INDIVIDUAL LECTURE COLOR THEMES ===== */
+
+/* Talk 1: Production Theory - Blue Theme */
+.lecture-blue~h1 {
+    color: #1e40af !important;
+    border-bottom-color: #1e40af !important;
+}
+
+.lecture-blue~h2 {
+    color: #1e40af;
+    border-bottom-color: #2563eb;
+}
+
+.lecture-blue~.admonition {
+    border-left-color: #1e40af;
+}
+
+.lecture-blue~.admonition-title {
+    color: #1e40af;
+}
+
+.lecture-blue~* a:hover {
+    color: #2563eb;
+}
+
+/* Talk 2: Profit Analysis - Green Theme */
+.lecture-green~h1 {
+    color: #047857 !important;
+    border-bottom-color: #047857 !important;
+}
+
+.lecture-green~h2 {
+    color: #047857;
+    border-bottom-color: #059669;
+}
+
+.lecture-green~.admonition {
+    border-left-color: #047857;
+}
+
+.lecture-green~.admonition-title {
+    color: #047857;
+}
+
+.lecture-green~* a:hover {
+    color: #059669;
+}
+
+/* Talk 3: Cost Analysis - Orange Theme */
+.lecture-orange~h1 {
+    color: #c2410c !important;
+    border-bottom-color: #c2410c !important;
+}
+
+.lecture-orange~h2 {
+    color: #c2410c;
+    border-bottom-color: #ea580c;
+}
+
+.lecture-orange~.admonition {
+    border-left-color: #c2410c;
+}
+
+.lecture-orange~.admonition-title {
+    color: #c2410c;
+}
+
+.lecture-orange~* a:hover {
+    color: #ea580c;
+}
+
+/* Talk 4: Supply and Demand - Purple Theme */
+.lecture-purple~h1 {
+    color: #7c3aed !important;
+    border-bottom-color: #7c3aed !important;
+}
+
+.lecture-purple~h2 {
+    color: #7c3aed;
+    border-bottom-color: #8b5cf6;
+}
+
+.lecture-purple~.admonition {
+    border-left-color: #7c3aed;
+}
+
+.lecture-purple~.admonition-title {
+    color: #7c3aed;
+}
+
+.lecture-purple~* a:hover {
+    color: #8b5cf6;
+}
+
+/* Talk 5: Market Structure - Teal Theme */
+.lecture-teal~h1 {
+    color: #0f766e !important;
+    border-bottom-color: #0f766e !important;
+}
+
+.lecture-teal~h2 {
+    color: #0f766e;
+    border-bottom-color: #14b8a6;
+}
+
+.lecture-teal~.admonition {
+    border-left-color: #0f766e;
+}
+
+.lecture-teal~.admonition-title {
+    color: #0f766e;
+}
+
+.lecture-teal~* a:hover {
+    color: #14b8a6;
+}
+
+/* Talk 6: Competition - Red Theme */
+.lecture-red~h1 {
+    color: #dc2626 !important;
+    border-bottom-color: #dc2626 !important;
+}
+
+.lecture-red~h2 {
+    color: #dc2626;
+    border-bottom-color: #ef4444;
+}
+
+.lecture-red~.admonition {
+    border-left-color: #dc2626;
+}
+
+.lecture-red~.admonition-title {
+    color: #dc2626;
+}
+
+.lecture-red~* a:hover {
+    color: #ef4444;
+}
+
+/* Talk 7: Decision Making - Pink Theme */
+.lecture-pink~h1 {
+    color: #be185d !important;
+    border-bottom-color: #be185d !important;
+}
+
+.lecture-pink~h2 {
+    color: #be185d;
+    border-bottom-color: #db2777;
+}
+
+.lecture-pink~.admonition {
+    border-left-color: #be185d;
+}
+
+.lecture-pink~.admonition-title {
+    color: #be185d;
+}
+
+.lecture-pink~* a:hover {
+    color: #db2777;
+}
+
+/* Talk 8: Business Strategy - Brown Theme */
+.lecture-brown~h1 {
+    color: #92400e !important;
+    border-bottom-color: #92400e !important;
+}
+
+.lecture-brown~h2 {
+    color: #92400e;
+    border-bottom-color: #d97706;
+}
+
+.lecture-brown~.admonition {
+    border-left-color: #92400e;
+}
+
+.lecture-brown~.admonition-title {
+    color: #92400e;
+}
+
+.lecture-brown~* a:hover {
+    color: #d97706;
+}
+
+/* Print styles for professional printing */
+@media print {
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+
+    .navbar,
+    .footer,
+    .sidebar {
+        display: none !important;
+    }
+
+    .main-content {
+        max-width: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        color: black !important;
+        text-decoration: underline !important;
+    }
+}
+
+/* =========================================
+   DARK MODE SUPPORT
+   ========================================= */
+
+html[data-theme="dark"] body,
+html[data-theme="dark"] .main-content {
+    background-color: #121212 !important;
+    color: #e6e6e6 !important;
+}
+
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5,
+html[data-theme="dark"] h6 {
+    color: #f0f0f0 !important;
+    border-bottom-color: #444 !important;
+}
+
+html[data-theme="dark"] p {
+    color: #e6e6e6 !important;
+}
+
+html[data-theme="dark"] .math {
+    color: #e6e6e6 !important;
+}
+
+html[data-theme="dark"] blockquote {
+    background-color: #1e1e1e !important;
+    color: #cccccc !important;
+    border-left-color: #6ab0f3 !important;
+}
+
+html[data-theme="dark"] table th {
+    background-color: #2d2d2d !important;
+    color: #e6e6e6 !important;
+    border-color: #444 !important;
+}
+
+html[data-theme="dark"] table td {
+    border-color: #444 !important;
+    color: #e6e6e6 !important;
+}
+
+html[data-theme="dark"] code {
+    background-color: #2d2d2d !important;
+    color: #ff7b72 !important;
+}
+
+html[data-theme="dark"] .admonition {
+    background-color: #1e1e1e !important;
+    border-color: #444 !important;
+}
+
+/* Adjust lecture colors for dark mode to be lighter/brighter */
+html[data-theme="dark"] body.lecture-1 h1,
+html[data-theme="dark"] body.lecture-1 h2,
+html[data-theme="dark"] body.lecture-1 section h1,
+html[data-theme="dark"] body.lecture-1 section h2 {
+    color: #6ab0f3 !important;
+    /* Lighter blue */
+    border-color: #6ab0f3 !important;
+    border-bottom-color: #6ab0f3 !important;
+}
+
+html[data-theme="dark"] body.lecture-2 h1,
+html[data-theme="dark"] body.lecture-2 h2,
+html[data-theme="dark"] body.lecture-2 section h1,
+html[data-theme="dark"] body.lecture-2 section h2 {
+    color: #4ade80 !important;
+    /* Lighter green */
+    border-color: #4ade80 !important;
+    border-bottom-color: #4ade80 !important;
+}
+
+html[data-theme="dark"] body.lecture-3 h1,
+html[data-theme="dark"] body.lecture-3 h2,
+html[data-theme="dark"] body.lecture-3 section h1,
+html[data-theme="dark"] body.lecture-3 section h2 {
+    color: #fbbf24 !important;
+    /* Lighter orange */
+    border-color: #fbbf24 !important;
+    border-bottom-color: #fbbf24 !important;
+}
+
+html[data-theme="dark"] body.lecture-4 h1,
+html[data-theme="dark"] body.lecture-4 h2,
+html[data-theme="dark"] body.lecture-4 section h1,
+html[data-theme="dark"] body.lecture-4 section h2 {
+    color: #a78bfa !important;
+    /* Lighter purple */
+    border-color: #a78bfa !important;
+    border-bottom-color: #a78bfa !important;
+}
+
+html[data-theme="dark"] body.lecture-5 h1,
+html[data-theme="dark"] body.lecture-5 h2,
+html[data-theme="dark"] body.lecture-5 section h1,
+html[data-theme="dark"] body.lecture-5 section h2 {
+    color: #2dd4bf !important;
+    /* Lighter teal */
+    border-color: #2dd4bf !important;
+    border-bottom-color: #2dd4bf !important;
+}
+
+html[data-theme="dark"] body.lecture-6 h1,
+html[data-theme="dark"] body.lecture-6 h2,
+html[data-theme="dark"] body.lecture-6 section h1,
+html[data-theme="dark"] body.lecture-6 section h2 {
+    color: #f87171 !important;
+    /* Lighter red */
+    border-color: #f87171 !important;
+    border-bottom-color: #f87171 !important;
+}
+
+html[data-theme="dark"] body.lecture-7 h1,
+html[data-theme="dark"] body.lecture-7 h2,
+html[data-theme="dark"] body.lecture-7 section h1,
+html[data-theme="dark"] body.lecture-7 section h2 {
+    color: #818cf8 !important;
+    /* Lighter indigo */
+    border-color: #818cf8 !important;
+    border-bottom-color: #818cf8 !important;
+}
+
+html[data-theme="dark"] body.lecture-8 h1,
+html[data-theme="dark"] body.lecture-8 h2,
+html[data-theme="dark"] body.lecture-8 section h1,
+html[data-theme="dark"] body.lecture-8 section h2 {
+    color: #f472b6 !important;
+    /* Lighter pink */
+    border-color: #f472b6 !important;
+    border-bottom-color: #f472b6 !important;
+}
