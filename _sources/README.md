@@ -54,7 +54,8 @@ jupyter-book build . --watch --serve
 
 ## 部署
 
-书籍可以部署到：- GitHub Pages
+书籍可以部署到：
+- GitHub Pages
 - Netlify
 - Vercel
 - 任何支持静态网站的平台
@@ -70,3 +71,5 @@ jupyter-book build . --watch --serve
 ## 贡献
 
 [添加贡献指南]
+
+<!-- Updated for Cloudflare Pages deployment fix on 2025-11-21 -->
