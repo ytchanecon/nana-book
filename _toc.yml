@@ -10,3 +10,5 @@ parts:
     title: "第一讲：奶奶，我们聊聊怎么开个养鸡场"
   - file: chapter2
     title: "第二讲：奶奶，咱们的养鸡场赚钱了吗？"
+  - file: chapter3
+    title: "第三讲：奶奶，怎么花钱最省？"
