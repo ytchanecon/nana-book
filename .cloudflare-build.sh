@@ -26,7 +26,8 @@ mkdir -p _build/site/book
 mv _build/html/* _build/site/book/
 
 # Copy our custom landing page to the staging root
-cp index.html _build/site/index.html
+# We use cover.html as the source for index.html
+cp cover.html _build/site/index.html
 
 # Copy assets to the staging root (for the landing page to use)
 cp -r assets _build/site/
@@ -38,6 +39,6 @@ mv _build/site _build/html
 
 echo "Build complete!"
 echo "Structure:"
-echo "  /index.html       -> Custom Landing Page"
+echo "  /index.html       -> Custom Landing Page (from cover.html)"
 echo "  /assets/          -> Assets for Landing Page"
 echo "  /book/index.html  -> Jupyter Book Intro"
