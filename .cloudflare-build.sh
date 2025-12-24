@@ -24,9 +24,6 @@ mv _build/html/* _build/html/book/ 2>/dev/null || true
 # Copy our custom index.html to the root
 cp index.html _build/html/index.html
 
-# Fix the link in index.html to point to the book subdirectory
-sed -i 's/href="index.html"/href="book\/index.html"/g' _build/html/index.html
-
 # Copy assets to the root so index.html can find them
 cp -r assets _build/html/ 2>/dev/null || true
 
