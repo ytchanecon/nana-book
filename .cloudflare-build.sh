@@ -8,23 +8,36 @@ pip install -r requirements.txt
 
 # 2. Build the Jupyter Book
 echo "Building the book..."
+# Clean previous builds to ensure fresh start
 jupyter-book clean .
 jupyter-book build .
 
-# 3. Handle entry point
-# We want the landing page to be the first thing people see.
-# But we don't want to break Jupyter Book's internal structure.
+# 3. Handle entry point with a Staging Directory approach
+# This avoids "moving directory into itself" errors.
 
 echo "Organizing files..."
 
-# Move the book to a subdirectory 'book/'
-mkdir -p _build/html/book
-mv _build/html/* _build/html/book/ 2>/dev/null || true
+# Create a staging directory
+mkdir -p _build/site/book
 
-# Copy our custom index.html to the root
-cp index.html _build/html/index.html
+# Move the generated book content (from _build/html) to the subfolder in staging
+# We use find/cp or just mv. mv is faster.
+# Note: _build/html/* includes the book content.
+mv _build/html/* _build/site/book/
 
-# Copy assets to the root so index.html can find them
-cp -r assets _build/html/ 2>/dev/null || true
+# Copy our custom landing page to the staging root
+cp index.html _build/site/index.html
 
-echo "Build complete! Entry: /index.html (Landing) -> /book/index.html (Jupyter Book)"
+# Copy assets to the staging root (for the landing page to use)
+cp -r assets _build/site/
+
+# 4. Finalize
+# Replace the original output directory with our staged version
+rm -rf _build/html
+mv _build/site _build/html
+
+echo "Build complete!"
+echo "Structure:"
+echo "  /index.html       -> Custom Landing Page"
+echo "  /assets/          -> Assets for Landing Page"
+echo "  /book/index.html  -> Jupyter Book Intro"
