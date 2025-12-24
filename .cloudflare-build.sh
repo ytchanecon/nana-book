@@ -13,17 +13,22 @@ jupyter-book clean .
 jupyter-book build .
 
 # 3. Handle entry point with a Staging Directory approach
-# This avoids "moving directory into itself" errors.
-
 echo "Organizing files..."
 
 # Create a staging directory
 mkdir -p _build/site/book
 
 # Move the generated book content (from _build/html) to the subfolder in staging
-# We use find/cp or just mv. mv is faster.
-# Note: _build/html/* includes the book content.
+# We use mv.
 mv _build/html/* _build/site/book/
+
+# CRITICAL FIX: Ensure book/index.html exists to prevent Cloudflare SPA fallback
+# If intro.html exists but index.html doesn't, or if index.html is just a redirect,
+# we ensure a solid entry point.
+if [ -f "_build/site/book/intro.html" ]; then
+    echo "Found intro.html, ensuring index.html exists..."
+    cp _build/site/book/intro.html _build/site/book/index.html
+fi
 
 # Copy our custom landing page to the staging root
 # We use cover.html as the source for index.html
@@ -41,4 +46,5 @@ echo "Build complete!"
 echo "Structure:"
 echo "  /index.html       -> Custom Landing Page (from cover.html)"
 echo "  /assets/          -> Assets for Landing Page"
-echo "  /book/index.html  -> Jupyter Book Intro"
+echo "  /book/intro.html  -> Jupyter Book Intro (Primary)"
+echo "  /book/index.html  -> Jupyter Book Intro (Fallback)"
