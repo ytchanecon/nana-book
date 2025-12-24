@@ -12,3 +12,9 @@ parts:
     title: "第二讲：奶奶，咱们的养鸡场赚钱了吗？"
   - file: chapter3
     title: "第三讲：奶奶，咱们得把账算得更细点"
+  - file: chapter4
+    title: "第四讲：奶奶，今天咱们卖多少只鸡？"
+  - file: chapter5
+    title: "第五讲：奶奶，整个村的鸡都从哪儿来？"
+  - file: chapter6
+    title: "第六讲：奶奶，要是咱们的养鸡场\"称霸\"全村"
