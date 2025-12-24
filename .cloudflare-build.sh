@@ -1,5 +1,5 @@
 #!/bin/bash
-# .cloudflare-build.sh - Optimized build script for Nana's Book
+# .cloudflare-build.sh - Correct fix for Nana's Book
 set -e
 
 # 1. Install dependencies
@@ -8,35 +8,26 @@ pip install -r requirements.txt
 
 # 2. Build the Jupyter Book
 echo "Building the book..."
+jupyter-book clean .
 jupyter-book build .
 
-# 3. Prepare the output directory
-# Jupyter Book builds into _build/html
-# We want:
-# /index.html -> Landing Page (custom index.html)
-# /intro.html -> Book Home (original intro.html)
-# /assets/ -> Images for landing page
+# 3. Handle entry point
+# We want the landing page to be the first thing people see.
+# But we don't want to break Jupyter Book's internal structure.
 
-echo "Organizing files for deployment..."
+echo "Organizing files..."
 
-# Ensure intro.html exists as the book home
-if [ -f _build/html/index.html ] && [ ! -f _build/html/intro.html ]; then
-    mv _build/html/index.html _build/html/intro.html
-fi
+# Move the book to a subdirectory 'book/'
+mkdir -p _build/html/book
+mv _build/html/* _build/html/book/ 2>/dev/null || true
 
-# Fix internal links in the book:
-# Most links to the 'Home' in sidebar/logo point to index.html.
-# We need them to point to intro.html now.
-echo "Fixing internal links..."
-find _build/html -name "*.html" -exec sed -i 's/href="index.html"/href="intro.html"/g' {} +
-find _build/html -name "*.html" -exec sed -i 's/href="#"/href="intro.html"/g' _build/html/intro.html 2>/dev/null || true
-
-# Copy custom landing page to the root index.html
+# Copy our custom index.html to the root
 cp index.html _build/html/index.html
 
-# Copy assets folder so images in landing page work
-echo "Copying assets..."
-mkdir -p _build/html/assets
-cp -r assets/* _build/html/assets/ 2>/dev/null || true
+# Fix the link in index.html to point to the book subdirectory
+sed -i 's/href="index.html"/href="book\/index.html"/g' _build/html/index.html
 
-echo "Build completed successfully!"
+# Copy assets to the root so index.html can find them
+cp -r assets _build/html/ 2>/dev/null || true
+
+echo "Build complete! Entry: /index.html (Landing) -> /book/index.html (Jupyter Book)"
