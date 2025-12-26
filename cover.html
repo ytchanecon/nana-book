@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -55,7 +56,7 @@
             background: white;
             border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease;
             cursor: pointer;
             text-decoration: none;
@@ -67,13 +68,13 @@
 
         .book-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
         }
 
         .book-cover {
             width: 100%;
             height: 700px;
-            background-image: url('assets/images/cover.png');
+            background-image: url('/assets/images/cover.png');
             background-size: auto 100%;
             background-position: center top;
             background-repeat: no-repeat;
@@ -174,7 +175,7 @@
             .book-card {
                 max-width: 90%;
             }
-            
+
             .book-cover {
                 width: 100%;
                 height: 550px;
@@ -183,6 +184,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
@@ -191,7 +193,7 @@
         </div>
 
         <div class="books-grid">
-            <a href="/book/intro.html" class="book-card">
+            <a href="/book/intro.html?v=2" class="book-card">
                 <div class="book-cover">
                     <div class="book-cover-content">
                         <div class="book-cover-title">跟奶奶说</div>
@@ -232,4 +234,5 @@
         </div>
     </div>
 </body>
+
 </html>
